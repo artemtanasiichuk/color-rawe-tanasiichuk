@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ColoRawe</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
+        <section class="header-section">
         <div class="container header-container">
             <div class="logo">
                 <img src="images/ed69f7fa91929ff49ecafac2bfd72360 1.png" alt="Logo">
@@ -25,11 +31,14 @@
             </div>
            
         </div>
+    </section>
     </header>
 
     <section id="main" class="hero">
         <div class="container">
-            
+            <div class="logo-container">
+               
+              </div>
             <div class="hero-content">
                 <h1>ColoRawe</h1>
                 <h2>Your dream Nike</h2>
@@ -65,36 +74,41 @@
     <section class="reviews">
         <div class="container">
             <h2 class="h2-reviews">Reviews</h2>
-            <div class="sticker"></div>
+           
             <ul class="reviews-container">
-                <li class="review">
+                <li class="review" class="review-first">
                     <p>Sneakers are very comfortable and well painted, nothing has worn off in a year.</p>
                     <span>John Taylor, 25.11</span>
                 </li>
-                <li class="review">
+                <li class="review" class="review-second">
                     <p>I'm very happy with this color scheme. They match all my clothes.</p>
                     <span>Elizabeth Garcia, 05.01</span>
                 </li>
-                <li class="review">
+                <li class="review" class="review-third">
                     <p>Just right if you need to go to a party. I use them actively, the paint is super.</p>
                     <span>Tom Maquare, 18.06</span>
                 </li>
             </ul>
         </div>
+        <div class="reviews-section">
+            <img src="./images/цветы 2 1.png" alt="Flower" class="flower-image">
+          </div>
+    
     </section>
-
-    <section id="order">
-        <div class="container">
-            <h2>Order Now</h2>
-            <form action="#">
-                <input type="email" placeholder="Your email">
-                <input type="text" placeholder="Your country">
-                <input type="text" placeholder="Your city">
-                <textarea placeholder="Your request"></textarea>
-                <button type="submit">Order my Nike</button>
-                
-            </form>
-           </div>
+   
+    <section class="order">
+        <div class="form-wrapper">
+            <div class="container">
+                <h2>Order</h2>
+                <form action="#">
+                    <input class="email-input" type="email" placeholder="Enter your email">
+                    <input class="country-input" type="text" placeholder="Enter your country">
+                    <input class="city-input" type="text" placeholder="Enter your city">
+                    <textarea class="request-textarea" placeholder="Describe your request"></textarea>
+                    <button class="order-button" type="submit">Order my Nike</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer class="footer-container">
